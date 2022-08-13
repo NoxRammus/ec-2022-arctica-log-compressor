@@ -1,0 +1,17 @@
+{
+  "name": "diffmaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max_old_space_size=4096 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^4.0.1",
+    "jsondiffpatch": "^0.4.1",
+    "JSONStream": "^1.3.5"
+  }
+}
