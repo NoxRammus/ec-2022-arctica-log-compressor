@@ -30,3 +30,4 @@ This is a node based script so you will need to have [node.js](https://nodejs.de
     * Change the path in `index.js` on `line 12` to point to the log file you want to diff.
 1. Run the command `npm start` and when the script is complete the diffed log will be created in the project directory with the filename of `diffLog.json`
 
+![image](https://user-images.githubusercontent.com/61915796/184701507-e924b809-f29e-4bdf-beae-0956936a0755.png)
