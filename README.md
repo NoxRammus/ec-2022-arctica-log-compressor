@@ -8,11 +8,14 @@ It also uses a stream reader to load in the logs.
 
 The script is configured to diff the logs in a sequential mannor (based on my limited testing and use case this results in the smallest file size).
 
-The library that is used to create the diffs can also be used to patch the diffs onto an existing json object.
+The library that is used to create the diffs can also be used to `patch` the diffs onto an existing json object aswell as `unpatching` which may be useful if you need to go to a previous tick.
+
+There is additional functionality which can be seen on the libraries [documentation](http://badge.fury.io/js/jsondiffpatch).
 
 E.g.:
 ```js
-const patchedLog = jsondiffpatch.patch(currentGameState, nextTickDelta);
+const forwardPatchedLog = jsondiffpatch.patch(currentGameState, nextTickDelta);
+const unPatchedLog = jsondiffpatch.unpatch(currentGameState, previouslyAppliedDelta);
 ```
 <hr>
 
