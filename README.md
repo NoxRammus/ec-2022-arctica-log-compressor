@@ -14,3 +14,16 @@ E.g.:
 ```js
 const patchedLog = jsondiffpatch.patch(currentGameState, nextTickDelta);
 ```
+<hr>
+
+## Usage
+
+This is a node based script so you will need to have [node.js](https://nodejs.dev/en/) & npm installed.
+
+### Steps to Run:
+1. In the project directory run the command `npm i`.
+1. The script will look for the file: `match-status.json` in its directory, you can either:
+    * Rename your log file and move it to the same directory as the script.
+    * Change the path in `index.js` on `line 12` to point to the log file you want to diff.
+1. Run the command `npm start` and when the script is complete the diffed log will be created in the project directory with the filename of `diffLog.json`
+
